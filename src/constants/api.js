@@ -1,0 +1,47 @@
+import {API_BASE_URL} from "@env"
+
+export const BASE_URL = API_BASE_URL;
+export const AUTH_URL = `${BASE_URL}/api/authenticate`;
+export const RESTORE_PASSWORD_INIT = `${BASE_URL}/api/account/reset-password/init`;
+export const RESTORE_PASSWORD_FINISH = `${BASE_URL}/api/account/reset-password/finish`;
+export const THERAPIST_SIGN_UP_EMAIL = `${BASE_URL}/api/therapists/register`;
+export const CLIENT_SIGN_UP_EMAIL = `${BASE_URL}/api/clients/register`;
+export const THERAPIST_ACTIVATE_EMAIL = `${BASE_URL}/api/activate-therapist`;
+export const CLIENT_ACTIVATE_EMAIL = `${BASE_URL}/api/activate-client`;
+export const THERAPIST_IS_REGISTRATION_KEY_VALID = `${BASE_URL}/api/therapists/key/valid`;
+export const CLIENT_IS_REGISTRATION_KEY_VALID = `${BASE_URL}/api/clients/key/valid`;
+export const CLIENT_UPLOAD_IMAGE = `${BASE_URL}/api/clients/photo`;
+export const THERAPIST_UPLOAD_IMAGE = `${BASE_URL}/api/therapists/photo`;
+export const UPDATE_CLIENT = `${BASE_URL}/api/clients/me`;
+export const UPDATE_THERAPIST = `${BASE_URL}/api/therapists/me`;
+export const GET_ALL_THERAPISTS = `${BASE_URL}/api/therapists`;
+export const GET_ALL_THERAPISTS_BY_DATE = (date) => `${BASE_URL}/api/therapists/available?date=${date}`;
+export const GET_CLIENT_ALL_APPOINTMENTS = `${BASE_URL}/api/appointments/my/clients`;
+export const GET_ALL_POSTS = `${BASE_URL}/api/blog-posts`;
+export const GET_THERAPIST_ALL_APPOINTMENTS = `${BASE_URL}/api/appointments/my/therapists`;
+export const GET_THERAPIST_CALENDAR = (id, startDate, endDate) =>
+  `${BASE_URL}/api/therapists/${id}/calendar?startDate=${startDate}&endDate=${endDate}`;
+export const GET_THERAPIST_AVAILABLE = (startDate) => `${BASE_URL}/api/therapists/calendar/me?startDate=${startDate}`;
+export const POST_BOOKING = `${BASE_URL}/api/appointments`;
+export const CONNECT_TO_ROOM = (id) => `${BASE_URL}/api/appointments/${id}/connect`;
+export const CANCEL_APPOINTMENT = (id) => `${BASE_URL}/api/appointments/${id}/cancel`;
+export const PAY_FOR_APPOINTMENT = (id) => `${BASE_URL}/api/appointments/${id}/pay`;
+export const LEAVE_THERAPIST_FEEDBACK = (id, rating) => `${BASE_URL}/api/appointments/${id}/rating?rating=${rating}`;
+export const UPLOAD_DOCUMENT = `${BASE_URL}/api/verification-documents`;
+export const STRIPE_PUBLIC_KEY = `${BASE_URL}/api/payment/stripe-public-key`;
+export const RECEIPTS_THERAPIST = `${BASE_URL}/api/payment/statistics-therapist`;
+export const RECEIPTS_CLIENT = `${BASE_URL}/api/payment/statistics-client`;
+export const RECEIPT_THERAPIST_PDF = (id) => `${BASE_URL}/api/payment/${id}/therapist`;
+export const RECEIPT_CLIENT_PDF = (id) => `${BASE_URL}/api/payment/${id}/client`;
+export const DOCUMENTS_ALL = `${BASE_URL}/api/therapists/verification-documents/my`;
+export const DOCUMENTS_REMOVE = (id) => `${BASE_URL}/api/verification-documents/${id}`;
+export const CLIENT_TURN_NOTIFICATIONS = (enable) => `${BASE_URL}/api/clients/me/push?enable=${enable}`;
+export const THERAPIST_TURN_NOTIFICATIONS = (enable) => `${BASE_URL}/api/therapists/me/push?enable=${enable}`;
+export const QUERY_POST_CODE = (id) => `https://api.postcodes.io/postcodes?q=${id}`;
+export const POST_CODES_BASE = 'https://api.postcodes.io';
+export const QUERY_POST_CODES = (query) => `${POST_CODES_BASE}/postcodes?q=${query}`;
+export const POST_FCM_TOKEN = `${BASE_URL}/api/fcm-tokens`;
+export const LOGOUT_URL = `${BASE_URL}/logout`;
+export const THERAPIST_CALENDAR_CUSTOM = `${BASE_URL}/api/therapists/calendar/custom`;
+export const DELETE_CUSTOM_AVAILABILITY = (id) => `${BASE_URL}/api/therapists/calendar/custom/${id}`;
+export const THERAPIST_RECURRENT_AVAILABILITY = `${BASE_URL}/api/therapists/calendar`;

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1050518409515",
+    "firebase_url": "https://marpe-wellbeing-f2b34.firebaseio.com",
+    "project_id": "marpe-wellbeing-f2b34",
+    "storage_bucket": "marpe-wellbeing-f2b34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050518409515:android:ae1dce8c240ebd3202756e",
+        "android_client_info": {
+          "package_name": "uk.marpewellbeing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050518409515-e34h0qea13iovn5pb7e300qqtie2jcto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3CxPaNZ5Yez7U2dxf4IxNDdHOMohn6pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050518409515-e34h0qea13iovn5pb7e300qqtie2jcto.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050518409515:android:6c62ef626935581f02756e",
+        "android_client_info": {
+          "package_name": "uk.marpewellbeing.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050518409515-e34h0qea13iovn5pb7e300qqtie2jcto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3CxPaNZ5Yez7U2dxf4IxNDdHOMohn6pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050518409515-e34h0qea13iovn5pb7e300qqtie2jcto.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
